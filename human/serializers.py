@@ -2,7 +2,6 @@ from rest_framework.serializers import ModelSerializer
 from human.models import Human
 
 
-# todo сериализовать модель match,чтоб показывался не только id,но и все поля сущности,сделаь комментарии
 class HumanSerializer(ModelSerializer):
     class Meta:
 

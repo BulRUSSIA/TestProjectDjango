@@ -1,0 +1,5 @@
+1)Устанавливаем зависимости из requirements.txt
+2)Создаем fake данные с помощью MakeHuman.py и MakeMatch.py
+3)Создаем миграции python manage.py makemigrations
+4)Применяем миграции python manage.py migrate
+5)Запускаем python manage.py runserver

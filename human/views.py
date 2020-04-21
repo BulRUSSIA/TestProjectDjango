@@ -1,4 +1,4 @@
-from rest_framework import viewsets, response, decorators
+from rest_framework import viewsets
 from .models import Human
 from .serializers import HumanSerializer
 
@@ -12,3 +12,5 @@ class HumansList(viewsets.ModelViewSet):
     """
     queryset = Human.objects.all()
     serializer_class = HumanSerializer
+    http_method_names = ['get', 'post', 'put', 'delete']
+

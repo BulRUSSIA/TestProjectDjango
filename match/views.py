@@ -12,3 +12,4 @@ class MatchList(viewsets.ModelViewSet):
         """
     queryset = Match.objects.all()
     serializer_class = MatchSerializer
+    http_method_names = ['get', 'post', 'put', 'delete']

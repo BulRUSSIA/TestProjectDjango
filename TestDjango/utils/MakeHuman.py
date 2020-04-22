@@ -11,7 +11,7 @@ from human.models import Human
 
 
 def write_human_table():
-    try:  # Генерируем рандомные данные для модели Humans и сохраняем в db
+    try:  # Генерируем рандомные данные для модели Human и сохраняем в db
         [Human(avatar=save_avatar(fake_gen.image_url()), first_name=fake_gen.first_name(),
                last_name=fake_gen.last_name(),
                age=fake_gen.random_int(18, 100), gender=fake_gen.random_int(0, 1)).save() for _ in range(10)]
